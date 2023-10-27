@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #F0F1F3;
+}
+
+.container {
+    width: 1020px; 
+    height: 700px; 
+    left: 260px; 
+    top: 20px; 
+    position: absolute; 
+    border-radius: 20px; 
+    background: #14238A
+}
+
+.left-panel img {
+    width: 527px; 
+    height: 700px; 
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px;
+}
+
+.right-panel {
+    width: 406px; 
+    height: 372px; 
+    left: 510px; 
+    top: 170px; 
+    position: absolute;
+}
+
+.right-panel:hover {
+    transform: scale(1.02);
+}
+
+.form-container {
+    width: 406px; 
+    height: 372px; 
+    left: 42px; 
+    top: 0px; 
+    position: absolute; 
+    background: white; 
+    border-radius: 15px
+}
+
+form input[type="email"] {
+    width: 348px; 
+    height: 64px; 
+    left: 30px; 
+    top: 67px; 
+    position: absolute; 
+    background: white; 
+    border-radius: 5px; 
+    border: 1px rgba(0, 0, 0, 0.26) solid
+}
+
+form input[type="password"] {
+    width: 348px; 
+    height: 64px; 
+    left: 30px; 
+    top: 145px; 
+    position: absolute; 
+    background: white; 
+    border-radius: 5px; 
+    border: 1px rgba(0, 0, 0, 0.26) solid
+}
+
+form input[type="submit"] {
+    width: 348px; 
+    height: 64px; 
+    left: 30px; 
+    top: 255px; 
+    position: absolute; 
+    color: white; 
+    font-size: 19px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 500; 
+    word-wrap: break-word; 
+    background: #D60A0B; 
+    border: 10px; 
+    border-color: #D60A0B; 
+    border-radius: 10px
+}
+
+form input[type="submit"]:hover {
+    background: #FF6B6B;
+    cursor: pointer;
+}
+
+#errorText {
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    display: none;
+    background: rgba(255, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    transition: display 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#errorText.show {
+    display: block;
+    opacity: 1;
+}
+
+#errorText::before {
+    content: "⚠️ ";
+    padding-right: 5px;
+}
+
+#errorText:hover {
+    cursor: pointer;
+    background: rgba(255, 0, 0, 0.5);
+}
+
+
+.forgot-password-link {
+    left: 40px; 
+    top: 215px; 
+    position: absolute; 
+    color: #14238A; 
+    font-size: 12px; 
+    font-family: Poppins; 
+    font-weight: 400; 
+    text-decoration: underline; 
+    word-wrap: break-word;
+}
+
+.forgot-password-link:hover {
+    color: #0074D9;
+    text-decoration: none;
+}
+
+.create-account-link {
+    left: 270px; 
+    top: 329px; 
+    position: absolute; 
+    color: #14238A; 
+    font-size: 12px; 
+    font-family: Poppins; 
+    font-weight: 400; 
+    text-decoration: underline; 
+    word-wrap: break-word;
+}
+
+.create-account-link:hover {
+    color: #0074D9;
+    text-decoration: none;
+}
+
+.footer-text {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 560px;
+    bottom: 100px;
+}
+
+.logo-and-welcome {
+    left: 70px; 
+    top: 220px; 
+    position: absolute; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 2px; 
+    display: inline-flex;
+}
+
+.logo-and-welcome:hover {
+    transform: scale(1.02);
+}
+
+.logo {
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex
+}
+
+.logo-image img {
+    width: 134.10px; 
+    height: 134.10px;  
+    filter: brightness(0) invert(1);
+    position: relative;
+}
+
+.logo-text {
+    color: #110365; 
+    font-size: 40px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 400; 
+    word-wrap: break-word
+}
+
+.welcome-text {
+    color: white; 
+    font-size: 60px; 
+    font-family: Poppins; 
+    font-weight: 700; 
+    word-wrap: break-word
+}
+
+::-webkit-input-placeholder {
+    color: #999; 
+    font-style: italic; 
+    font-size: 18px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400; 
+    word-wrap: break-word;
+    padding: 10px;
+}
+:-ms-input-placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400; 
+    word-wrap: break-word;
+    padding: 10px;
+}
+::-moz-placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400; 
+    word-wrap: break-word;
+    padding: 10px;
+}
+:-moz-placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400; 
+    word-wrap: break-word;
+    padding: 10px;
+}
+

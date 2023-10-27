@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <img src="images/Vector 4.png" alt="U2017 ECE">
+            <div class="logo-and-welcome">
+                <div class="logo">
+                    <div class="logo-image">
+                        <img src="images/8687669_ic_fluent_people_community_regular_icon.png" alt="Logo">
+                    </div>
+                    <div class="logo-text">
+                        ECE U2017
+                    </div>
+                </div>
+                <div class="welcome-text">
+                    WELCOME
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="form-container">
+                <form id="loginForm" onsubmit="return validateForm()">
+                    <input type="email" id="email" name="email" placeholder="email : example@email.com" required>
+                    <br>
+                    <input type="password" id="password" name="password" placeholder="password" required>
+                    <br>
+                    <input type="submit" value="SIGN IN">
+                </form>
+                <p id="errorText"></p>
+                <div class="forgot-password-link">
+                    <a href="##">Forgot your password?</a>
+                </div>
+                <div class="create-account-link">
+                    <a href="##">Create an Account</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-text">
+            © 2023 Electronics & Computer Engineering, 500 Level.
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
